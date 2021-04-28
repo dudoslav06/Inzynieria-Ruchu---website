@@ -13,8 +13,9 @@
 
 body
 {
-	background-image: url("../Bussinesscard official/images/2.jpg");
+	background-image: url("images/2.jpg");
 	-webkit-background-size: cover;
+	background-size: cover;
     background-attachment: fixed;
 	background-repeat: no-repeat;
 }
@@ -35,7 +36,6 @@ body
 	grid-gap: 0.5rem;
 	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	font-weight: 800;
-	text-transform:;
 	font-size: 14px;
 	color: rgba(0,0,0,1.0);
 	text-align: center;
@@ -51,7 +51,8 @@ nav{
 	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	letter-spacing: 5px;
 	font-size: 30px;
-	webkit-backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	backdrop-filter: blur(7px);
 }
 nav a{
     text-decoration: none;
@@ -81,7 +82,8 @@ main{
 	grid-area: main;
 	border-radius: var(--main-radius);
 	padding-top: var(--main-padding);
-	webkit-backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	backdrop-filter: blur(7px);
 	padding-bottom: 50px;
 }
 
@@ -94,10 +96,10 @@ main{
 #sidebar{
 	background: var(--bgcolor);
 	grid-area: sidebar;
-
 	border-radius: var(--main-radius);
 	padding-top: var(--main-padding);
-	webkit-backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	backdrop-filter: blur(7px);
 
 }
 .data{
@@ -111,7 +113,8 @@ main{
 	grid-area: Content1;
 	border-radius: var(--main-radius);
 	padding-top: var(--main-padding);
-	webkit-backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	backdrop-filter: blur(7px);
 	padding-bottom: 50px;
 }
 #Content2{
@@ -119,7 +122,8 @@ main{
 	grid-area: Content2;
 	border-radius: var(--main-radius);
 	padding-top: var(--main-padding);
-	webkit-backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	backdrop-filter: blur(7px);
 	padding-bottom: 50px;
 
 }
@@ -128,7 +132,8 @@ footer{
 	grid-area: footer;
 	border-radius: var(--main-radius);
 	padding-top: var(--main-padding);
-	webkit-backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	backdrop-filter: blur(7px);
 
 }
 
@@ -166,9 +171,10 @@ p{
 }
 
 .photo_portfolio img{
-	width: 350px;
+	width: 400px;
 	opacity: 0.9;
 	transition: 0.5s all;
+	border: 1px solid black;
 }
 .photo_portfolio img:hover{
 	opacity: 1.0;
@@ -193,7 +199,7 @@ p{
 	}
 	.data{
 	transform: translateY(00px);
-}
+	}
 	nav{
 		position: sticky;
 		bottom: 0;
@@ -209,3 +215,4 @@ p{
 		font-size: 15px;
 		letter-spacing: 2px;
 	}
+}
